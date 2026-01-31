@@ -3,7 +3,7 @@ import { TrendingUp, DollarSign, Activity, Target, CheckCircle2 } from 'lucide-r
 const SolutionPage = () => {
     return (
         <div className="animate-fade-in">
-            {}
+            { }
             <section className="bg-gradient-to-r from-gov-green-500 to-gov-green-600 text-white py-16">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <h1 className="text-4xl md:text-5xl font-bold mb-4">Our Solution</h1>
@@ -12,7 +12,7 @@ const SolutionPage = () => {
                     </p>
                 </div>
             </section>
-            {}
+            { }
             <section className="py-16 bg-white">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="card bg-green-50 border-l-4 border-gov-green-500">
@@ -28,7 +28,7 @@ const SolutionPage = () => {
                     </div>
                 </div>
             </section>
-            {}
+            { }
             <section className="py-16 bg-gray-50">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <h2 className="section-title text-center mb-4">The 3 Core Metrics</h2>
@@ -36,7 +36,7 @@ const SolutionPage = () => {
                         Our scoring engine evaluates every application using these key indicators
                     </p>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
-                        {}
+                        { }
                         <div className="card bg-white">
                             <div className="w-16 h-16 bg-gov-blue-100 rounded-lg flex items-center justify-center mb-4">
                                 <DollarSign className="w-8 h-8 text-gov-blue-600" />
@@ -65,7 +65,7 @@ const SolutionPage = () => {
                                 </p>
                             </div>
                         </div>
-                        {}
+                        { }
                         <div className="card bg-white">
                             <div className="w-16 h-16 bg-gov-blue-100 rounded-lg flex items-center justify-center mb-4">
                                 <TrendingUp className="w-8 h-8 text-gov-blue-600" />
@@ -98,7 +98,7 @@ const SolutionPage = () => {
                                 </p>
                             </div>
                         </div>
-                        {}
+                        { }
                         <div className="card bg-white">
                             <div className="w-16 h-16 bg-gov-blue-100 rounded-lg flex items-center justify-center mb-4">
                                 <Activity className="w-8 h-8 text-gov-blue-600" />
@@ -138,7 +138,7 @@ const SolutionPage = () => {
                     </div>
                 </div>
             </section>
-            {}
+            { }
             <section className="py-16 bg-white">
                 <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                     <h2 className="section-title text-center mb-4">Risk Bucket Matrix</h2>
@@ -238,7 +238,74 @@ const SolutionPage = () => {
                     </div>
                 </div>
             </section>
-            {}
+            {/* Specialized MSME Scoring */}
+            <section className="py-16 bg-blue-50">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <h2 className="section-title text-center mb-4">Specialized MSME Scoring</h2>
+                    <p className="section-subtitle text-center mb-12">
+                        Tailored evaluation logic for Micro, Small, and Medium Enterprises
+                    </p>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                        <div className="space-y-6">
+                            <div className="flex items-start space-x-4">
+                                <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-sm flex-shrink-0">
+                                    <CheckCircle2 className="w-6 h-6 text-green-600" />
+                                </div>
+                                <div>
+                                    <h3 className="text-xl font-bold text-gray-900">Compliance Rewards</h3>
+                                    <p className="text-gray-600 mt-1">
+                                        We don't just punish non-compliance; we reward it. GST and UDYAM registrations directly boost the credit score by up to <strong>35 points</strong>.
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="flex items-start space-x-4">
+                                <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-sm flex-shrink-0">
+                                    <TrendingUp className="w-6 h-6 text-blue-600" />
+                                </div>
+                                <div>
+                                    <h3 className="text-xl font-bold text-gray-900">Asset-Backed Assessment</h3>
+                                    <p className="text-gray-600 mt-1">
+                                        Unlike standard personal loans, we factory in <strong>Inventory, Machinery, and Property</strong> value to mitigate risk, allowing for higher loan limits.
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="flex items-start space-x-4">
+                                <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-sm flex-shrink-0">
+                                    <Activity className="w-6 h-6 text-purple-600" />
+                                </div>
+                                <div>
+                                    <h3 className="text-xl font-bold text-gray-900">Business Stability Factor</h3>
+                                    <p className="text-gray-600 mt-1">
+                                        Years of operation and bank account history serve as powerful trust signals, compensating for lack of traditional collateral.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-100">
+                            <h3 className="text-lg font-bold text-gray-800 mb-4 border-b pb-2">MSME Scoring Logic Preview</h3>
+                            <div className="space-y-3 font-mono text-sm">
+                                <div className="flex justify-between p-2 bg-green-50 rounded text-green-800">
+                                    <span>+ GST & UDYAM Reg</span>
+                                    <span className="font-bold">+35 pts</span>
+                                </div>
+                                <div className="flex justify-between p-2 bg-blue-50 rounded text-blue-800">
+                                    <span>+ 5+ Years Business</span>
+                                    <span className="font-bold">+20 pts</span>
+                                </div>
+                                <div className="flex justify-between p-2 bg-purple-50 rounded text-purple-800">
+                                    <span>+ Assets &gt; ₹20L</span>
+                                    <span className="font-bold">+25 pts</span>
+                                </div>
+                                <div className="flex justify-between p-2 bg-red-50 rounded text-red-800">
+                                    <span>- EMI Burden &gt; 50%</span>
+                                    <span className="font-bold">-100 pts</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            { }
             <section className="py-16 bg-gray-50">
                 <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                     <h2 className="section-title text-center mb-4">Credit Score (200-900)</h2>
@@ -246,7 +313,7 @@ const SolutionPage = () => {
                         A familiar score similar to CIBIL, combining ML predictions with business rules
                     </p>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        {}
+                        { }
                         <div className="card">
                             <h3 className="text-xl font-bold mb-4">Score Categories</h3>
                             <div className="space-y-3">
@@ -272,7 +339,7 @@ const SolutionPage = () => {
                                 </div>
                             </div>
                         </div>
-                        {}
+                        { }
                         <div className="card">
                             <h3 className="text-xl font-bold mb-4">Score Calculation Factors</h3>
                             <ul className="space-y-3">
@@ -306,7 +373,7 @@ const SolutionPage = () => {
                     </div>
                 </div>
             </section>
-            {}
+            { }
             <section className="py-16 bg-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <h2 className="section-title text-center mb-12">Key Benefits</h2>
@@ -326,7 +393,7 @@ const SolutionPage = () => {
                     </div>
                 </div>
             </section>
-            {}
+            { }
             <section className="gradient-bg text-white py-16">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <h2 className="text-3xl font-bold mb-4">

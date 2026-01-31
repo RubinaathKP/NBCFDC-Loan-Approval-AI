@@ -3,7 +3,7 @@ import { AlertCircle, TrendingDown, Users, FileX, DollarSign } from 'lucide-reac
 const ProblemPage = () => {
     return (
         <div className="animate-fade-in">
-            {}
+            { }
             <section className="bg-gradient-to-r from-red-600 to-red-700 text-white py-16">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <h1 className="text-4xl md:text-5xl font-bold mb-4">The Problem</h1>
@@ -12,7 +12,7 @@ const ProblemPage = () => {
                     </p>
                 </div>
             </section>
-            {}
+            { }
             <section className="py-16 bg-white">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="card bg-red-50 border-l-4 border-red-600">
@@ -68,7 +68,7 @@ const ProblemPage = () => {
                                 </div>
                             </div>
                         </div>
-                        {}
+                        { }
                         <div className="card">
                             <div className="flex items-start space-x-4">
                                 <div className="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -83,7 +83,7 @@ const ProblemPage = () => {
                                 </div>
                             </div>
                         </div>
-                        {}
+                        { }
                         <div className="card">
                             <div className="flex items-start space-x-4">
                                 <div className="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -101,7 +101,42 @@ const ProblemPage = () => {
                     </div>
                 </div>
             </section>
-            {}
+            {/* MSME Specific Challenges */}
+            <section className="py-16 bg-white">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <h2 className="section-title text-center mb-12">The MSME Credit Gap</h2>
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div className="card border-t-4 border-orange-500">
+                            <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
+                                <FileX className="w-6 h-6 text-orange-600" />
+                            </div>
+                            <h3 className="text-xl font-bold mb-2">Compliance Hurdles</h3>
+                            <p className="text-gray-600">
+                                Many small businesses lack formal GST or UDYAM registration, making them invisible to institutional lenders despite having steady cash flow.
+                            </p>
+                        </div>
+                        <div className="card border-t-4 border-orange-500">
+                            <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
+                                <DollarSign className="w-6 h-6 text-orange-600" />
+                            </div>
+                            <h3 className="text-xl font-bold mb-2">Asset Valuation</h3>
+                            <p className="text-gray-600">
+                                Machinery, inventory, and semi-finished goods are often ignored as collateral by traditional banks, undervaluing real business worth.
+                            </p>
+                        </div>
+                        <div className="card border-t-4 border-orange-500">
+                            <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
+                                <TrendingDown className="w-6 h-6 text-orange-600" />
+                            </div>
+                            <h3 className="text-xl font-bold mb-2">Profit vs. Cash Flow</h3>
+                            <p className="text-gray-600">
+                                High turnover businesses often show low on-paper profit due to unrecorded expenses, leading to unfair rejection by tax-based models.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            { }
             <section className="py-16 bg-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <h2 className="section-title text-center mb-12">
